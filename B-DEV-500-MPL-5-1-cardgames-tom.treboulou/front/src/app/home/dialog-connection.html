@@ -1,0 +1,16 @@
+
+<div style="display: flex; flex-direction:column; align-items: center; justify-content: center;">
+  <p style="display: flex; flex-direction: column; align-items: center;">
+    <mat-label>Email :</mat-label>
+    <mat-form-field appearance="fill">
+      <input matInput #email placeholder="Ex: email@gmail.com" type="email">
+    </mat-form-field>
+  </p>
+  <p style="display: flex; flex-direction: column; align-items: center;">
+    <mat-label>Mot de passe :</mat-label>
+    <mat-form-field appearance="fill">
+      <input matInput #password type="password">
+    </mat-form-field>
+  </p>
+  <button mat-raised-button (click)="onOkClick(email.value, password.value)">Se connecter</button>
+</div>

@@ -1,0 +1,120 @@
+<div class="row" style="justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+    <img src="../../assets/Logo_Ombre.png" style="width: 8vh; margin-right: 8px;">
+    <h1 style="font-weight: 800; font-family: cursive;">Bienvenue sur OffEffect !</h1>
+</div>
+<div class="row" style="justify-content: center">
+    <mat-card class="mat-elevation-z8" style="text-align: center; width: 80vh;">
+        <mat-card-header style="display: contents;">
+            <mat-card-title>Crée tes propres liens entre plusieurs réactions</mat-card-title>
+            <mat-card-subtitle>Selectionne les applications que tu veux mettre en relation</mat-card-subtitle>
+        </mat-card-header>
+        <span layout="row"><hr flex/></span>
+        <mat-dialog-content>
+            <!-- ETAPE 1 -->
+            <div class="row" style="justify-content: center; margin-bottom: -22px; display: contents;">
+                <h4 style="text-align: center;">Etape 1 choisir vos apps !</h4>
+                <mat-form-field appearance="outline" style="margin-left: auto; width: 33%;">
+                    <mat-label>Connecter cette app...</mat-label>
+                    <mat-select [disabled]="app2 && app1" [(value)]="app1" [ngClass]="app1" [ngStyle]="{'background': app1 ? 'url(' + app1.path +') center / contain no-repeat' : '', 'white-space': 'nowrap', 'display': 'inline'}">
+                        <mat-option>None</mat-option>
+                        <mat-option *ngFor="let app of networks" [value]="app">
+                            {{app.name}}
+                            <img width="15" height="15" [src]="app?.path">
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="outline" style="margin-right: auto; margin-left: 100px; width: 33%;">
+                    <mat-label>Avec celle-ci</mat-label>
+                    <mat-select [disabled]="app2 && app1" [(value)]="app2" [ngClass]="app2" [ngStyle]="{'background': app2 ? 'url(' + app2.path +') center / contain no-repeat' : '', 'white-space': 'nowrap', 'display': 'inline'}">
+                        <mat-option>None</mat-option>
+                        <mat-option *ngFor="let app of networks" [value]="app">
+                            {{app.name}}
+                            <img width="15" height="15" [src]="app?.path">
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <!-- -------------- -->
+
+            <span layout="row"><hr flex/></span>
+
+            <!-- ETAPE 2 SE CONNECTER -->
+            <div *ngIf="app2" class="row" style="justify-content: center; display: contents;">
+                <h4 style="text-align: center;">Etape 2 se connecter !</h4>
+                <mat-icon *ngIf="firstConnect" style="text-transform:none; margin-left: auto;">check_circle_outline</mat-icon>
+                <mat-icon *ngIf="secondConnect" style="margin-right: auto; margin-left: 18px;">check_circle_outline</mat-icon>
+                <a (click)="connect1()" *ngIf="!firstConnect" class="btn btn-outline-dark" role="button" style="text-transform:none; margin-left: auto;">
+                    <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" [src]="app1.path" />
+                    Login with {{app1.name}}
+                </a>
+                <a (click)="connect2()" *ngIf="!secondConnect" class="btn btn-outline-dark" role="button" style="text-transform:none; margin-left: 25px;">
+                    <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" [src]="app2.path" />
+                    Login with {{app2.name}}
+                </a>
+            </div>
+            <!-- -------------- -->
+
+            <span *ngIf="isConnected" layout="row"><hr flex/></span>
+
+            <!-- ETAPE 3 -->
+            <div *ngIf="isConnected" class="row" style="justify-content: center; margin-bottom: -22px; display: contents;">
+                <h4 style="text-align: center;">Etape 3 choisir actions !</h4>
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field appearance="outline" style="margin-left: auto;">
+                            <mat-label>Action</mat-label>
+                            <mat-select [(value)]="lastStep1">
+                                <mat-option>None</mat-option>
+                                <mat-option [value]="action" *ngFor="let action of app1.actions">{{action.name}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <ng-container *ngIf="lastStep1?.args != null">
+                            <mat-form-field *ngFor="let arg of lastStep1.args" appearance="fill" >
+                                    <div *ngIf="arg.type == 'list'">
+                                        <mat-label>choisir</mat-label>
+                                        <mat-select [(value)]="selected">
+                                            <mat-option>None</mat-option>
+                                            <mat-option [value]="select.value" *ngFor="let select of getValue(arg)">{{ select.label }}</mat-option>
+                                        </mat-select>
+                                    </div>
+                                    <div *ngIf="arg.type == 'string'">
+                                        <input matInput placeholder="message..." [(ngModel)]="selectedInput">
+                                    </div>
+                            </mat-form-field>
+                        </ng-container>
+                    </div>
+
+                    <hr class="divider">
+                    <div class="col">
+                        <mat-form-field appearance="outline" style="margin-right: 45px; margin-left: 100px;">
+                            <mat-label>Réaction</mat-label>
+                            <mat-select [(value)]="lastStep2">
+                                <mat-option>None</mat-option>
+                                <mat-option [value]="reaction" *ngFor="let reaction of app2.reactions">{{ reaction.name }}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <ng-container *ngIf="lastStep2?.args != null">
+                            <mat-form-field *ngFor="let arg of lastStep2.args" appearance="fill" style="margin-left: 54px;">
+                                    <div *ngIf="arg.type == 'list'">
+                                        <mat-label>choisir</mat-label>
+                                        <mat-select [(value)]="selected2">
+                                            <mat-option>None</mat-option>
+                                            <mat-option [value]="select.value" *ngFor="let select of getValue2(arg)">{{ select.label }}</mat-option>
+                                        </mat-select>
+                                    </div>
+                                    <div *ngIf="arg.type == 'string'">
+                                        <input matInput placeholder="message..." [(ngModel)]="selected2Input">
+                                    </div>
+                            </mat-form-field>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------- -->
+            <span *ngIf="isConnected" layout="row"><hr flex/></span>
+            <div *ngIf="lastStep2 && lastStep1" class="row" style="justify-content: center;">
+                <button (click)="submit()" style="width: 16% ; border-radius: 12px;" class="btn btn-primary">Valider</button>
+            </div>
+        </mat-dialog-content>
+    </mat-card>
+</div>

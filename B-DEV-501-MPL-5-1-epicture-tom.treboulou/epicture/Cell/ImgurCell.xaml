@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="epicture.Cell.ImgurCell" x:Name="mainCell" Tapped="CellClicked">
+    <StackLayout x:Name="mainLayout">
+        <StackLayout Orientation="Horizontal" BackgroundColor="#A5A5A5" Padding="5">
+            <Label x:Name="titleLabel" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" Margin="10, 0, 0, 0" TextColor="Black" FontSize="14" MaxLines="1" LineBreakMode="TailTruncation"/>
+            <Image x:Name="likeImage" Source="love_empty.png" Margin="10, 0, 10, 0" VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+            <Label x:Name="tmpToken" IsVisible="false"/>
+        </StackLayout>
+        <Image x:Name="mainImage" Aspect="AspectFit" HeightRequest="400"/>
+    </StackLayout>
+</ViewCell>

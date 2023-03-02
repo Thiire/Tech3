@@ -1,0 +1,7 @@
+<div class="container">
+    <app-creation (change)="getAreas()"></app-creation>
+    <span layout="row"><hr flex/></span>
+    <div class="row" >
+        <app-area *ngFor="let area of areas" [data]="area" ></app-area>
+    </div>
+</div>

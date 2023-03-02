@@ -1,0 +1,61 @@
+<mat-drawer-container fullscreen>
+  <mat-drawer #drawer style="height: 100%; width: 70px;" mode="side" #drawer opened="true">
+    <mat-nav-list style="height: 90%;">
+      <mat-list-item (click)="goToPage('/Home')">
+        <mat-icon svgIcon="Home" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Youtube')">
+        <mat-icon svgIcon="Youtube" class="icons-color-selected" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Spotify')">
+        <mat-icon svgIcon="Spotify" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Twitch')">
+        <mat-icon svgIcon="Twitch" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Battlenet')">
+        <mat-icon svgIcon="Battlenet" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Minecraft')">
+        <mat-icon svgIcon="Minecraft" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Meteo')">
+        <mat-icon svgIcon="Meteo" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Money')">
+        <mat-icon svgIcon="Money" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Time-zone')">
+        <mat-icon svgIcon="Heure" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Lorem')">
+        <mat-icon svgIcon="Lorem" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-label style="display: flex; padding-left: 10px;">reload</mat-label>
+    <mat-select style="background-color: lightgray; width: 100%; text-align: center;" [(value)]="timing" [placeholder]="test">
+      <mat-option value="15000">15s</mat-option>
+      <mat-option value="30000">30s</mat-option>
+      <mat-option value="60000">60s</mat-option>
+    </mat-select>
+  </mat-drawer>
+  
+    <mat-toolbar class="toolbar-service">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h4 class="service-name">Youtube</h4>
+      <span class="example-spacer"></span>
+      <h5 style="color: red; margin-right: 4%; font-size: larger;" *ngIf="this.isVisible">{{textError}}</h5>
+      <h5 style="color: green; margin-right: 4%; font-size: larger;" *ngIf="this.state && this.connected">Connecté</h5>
+      <button mat-raised-button *ngIf="this.state && !this.connected" class="service-login-button" (click)="goToLink('http://localhost:8080/authorize/youtube')">se connecter</button>
+    </mat-toolbar>
+    <mat-tab-group mat-stretch-tabs animationDuration="2000ms">
+      <mat-tab label="Rechercher une vidéo">
+      </mat-tab>
+    </mat-tab-group>
+    <p class="exemple">
+      En cours de dévelopement...
+    </p>
+  </mat-drawer-container>
+  

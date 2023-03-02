@@ -1,0 +1,90 @@
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  ::ng-deep .mat-toolbar{
+    z-index: 10000;
+    position: fixed
+  }
+
+  ::ng-deep .mat-tab-group{
+    margin-top:5% !important;
+  }
+  
+  ::ng-deep .mat-tab-header{
+    z-index: 10000;
+    width:100vw;
+    position: fixed  !important;
+    background-color: white !important;
+  }
+  
+  ::ng-deep .mat-tab-body-wrapper{
+    position: relative !important;
+    margin-top:45px;
+  }
+
+  .toolbar-service {
+    flex: 1;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .service-name {
+    margin-left: 1%;
+    font-size: xx-large;
+  }
+
+  .service-user {
+    margin-right: 10%;
+    font-size: large;
+  }
+  
+  .service-login-button {
+    margin-right: 4%;
+    font-size: large;
+  }
+  
+  .mat-tab-main {
+    background-color: white;
+    color:black;
+  }
+  
+  .forms-main {
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    background-color: #F0F0F0;
+  }
+  
+  .test {
+    background-color: yellow;
+  }
+  
+  .icons-color {
+    color: black;
+  }
+  
+  .icons-color svg {
+    fill: black;
+  }
+  
+  .icons-color-selected {
+    color: orange;
+  }
+  
+  .icons-color-selected svg {
+    fill: orange;
+  }
+
+  .exemple {
+    margin-top: 4em;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+  }

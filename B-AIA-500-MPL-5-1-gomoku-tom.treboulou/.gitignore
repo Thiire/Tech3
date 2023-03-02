@@ -1,0 +1,14 @@
+.vscode
+*.exe
+pbrain-*
+*.o
+*.sln
+*.vcxproj*
+*.cmake
+CMakeFiles
+CMakeCache.txt
+Release
+x64
+.vs
+Debug
+*.txt

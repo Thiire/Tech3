@@ -1,0 +1,18 @@
+<div class="card" style="width: 18rem;background-color:#2493e2;" >
+      <button style="align-self: flex-end;" mat-icon-button >
+        <mat-icon>delete</mat-icon>
+      </button>
+    <div class="card-body" style="margin-top: -35px;">
+        <div class="row">
+            <div class="col">
+                <img width="20px" style="margin-bottom:3px; margin-right:5px" [src]="getPath(data.action.network)" />
+                <p>{{data.action.name}}</p>
+            </div>
+             - 
+            <div class="col">
+                <img width="20px" style="margin-bottom:3px; margin-right:5px" [src]="getPath(data.reaction.network)" />
+                <p>{{data.reaction.name}}</p>
+            </div>
+        </div>
+    </div>
+  </div>

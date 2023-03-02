@@ -1,0 +1,28 @@
+
+<div style="display: flex; flex-direction:column; align-items: center; justify-content: center;">
+  <p style="display: flex; flex-direction: column; align-items: center;">
+    <mat-label>Nom d'utilisateur :</mat-label>
+    <mat-form-field appearance="fill">
+      <input matInput #pseudo maxlength="20" placeholder="Ex: Hecto">
+    </mat-form-field>
+  </p>
+  <p style="display: flex; flex-direction: column; align-items: center;">
+    <mat-label>Email :</mat-label>
+    <mat-form-field appearance="fill">
+      <input matInput #email placeholder="Ex: email@gmail.com">
+    </mat-form-field>
+  </p>
+  <p style="display: flex; flex-direction: column; align-items: center;">
+    <mat-label>Mot de passe :</mat-label>
+    <mat-form-field appearance="fill">
+      <input matInput #password type="password">
+    </mat-form-field>
+  </p>
+  <p style="display: flex; flex-direction: column; align-items: center;">
+    <mat-label>confirmer le Mot de passe :</mat-label>
+    <mat-form-field appearance="fill">
+      <input matInput #secondpassword type="password">
+    </mat-form-field>
+  </p>
+  <button mat-raised-button (click)="onOkClick(pseudo.value, email.value, password.value, secondpassword.value)">S'inscrire</button>
+</div>

@@ -1,0 +1,58 @@
+<mat-drawer-container fullscreen>
+    <mat-drawer #drawer mode="side" #drawer opened="true">
+      <mat-nav-list>
+        <mat-list-item (click)="goToPage('/Home')">
+          <mat-icon svgIcon="Home" class="icons-color-selected" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Youtube')">
+          <mat-icon svgIcon="Youtube" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Spotify')">
+          <mat-icon svgIcon="Spotify" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Twitch')">
+          <mat-icon svgIcon="Twitch" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Battlenet')">
+          <mat-icon svgIcon="Battlenet" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Minecraft')">
+          <mat-icon svgIcon="Minecraft" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Meteo')">
+          <mat-icon svgIcon="Meteo" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Money')">
+          <mat-icon svgIcon="Money" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Time-zone')">
+          <mat-icon svgIcon="Heure" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="goToPage('/Lorem')">
+          <mat-icon svgIcon="Lorem" class="icons-color" mat-list-icon></mat-icon>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-drawer>
+  
+    <mat-toolbar class="toolbar-service">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h4 class="service-name">DashBoard</h4>
+      <span class="example-spacer"></span>
+      <h5 class="service-user" *ngIf="this.state">Bienvenue <strong>{{this.username}}</strong></h5>
+      <h5 style="color: red; margin-right: 2%; font-size: larger;" *ngIf="this.isVisible && !this.state">{{textError}}</h5>
+      <button mat-raised-button class="service-login-button" (click)="openSignin()" *ngIf="!this.state">s'inscrire</button>
+      <button mat-raised-button class="service-login-button" (click)="openConnection()" *ngIf="!this.state">se connecter</button>
+    </mat-toolbar>
+    <p class="exemple"> Bonjour et bienvenue sur Dashboard<br>
+      (qui n'est pas un vrai Dashboard je vous l'accorde),<br>
+        <br>
+        Dashboard est un site de gestion de Widgets. Il a pour but de permettre à l'utilisateur de se connecter à divers Services (ex: Twitch, Spotify, Météo, Minecraft, et d'autres...).<br>
+        <br>
+        Une fois connecté aux Services de son choix, il est possible d'utiliser des Widgets liés à ce Service (ex: skin minecraft d'un utilisateur, nombre de followers de sa chaine Twitch, et d'autres...).<br>
+        <br>
+        Lorsque l'utilisateur à choisi et configuré ses Widgets, il peut visualiser leurs informations à tout moment depuis leur page respective. Les informations de ceux-ci sont actualisées en fonction de la configuration du Widget.<br>
+    </p>
+  </mat-drawer-container>
+  

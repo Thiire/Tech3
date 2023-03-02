@@ -1,0 +1,109 @@
+<mat-drawer-container fullscreen>
+  <mat-drawer #drawer style="height: 100%; width: 70px;" mode="side" #drawer opened="true">
+    <mat-nav-list style="height: 90%;">
+      <mat-list-item (click)="goToPage('/Home')">
+        <mat-icon svgIcon="Home" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Youtube')">
+        <mat-icon svgIcon="Youtube" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Spotify')">
+        <mat-icon svgIcon="Spotify" class="icons-color-selected" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Twitch')">
+        <mat-icon svgIcon="Twitch" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Battlenet')">
+        <mat-icon svgIcon="Battlenet" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Minecraft')">
+        <mat-icon svgIcon="Minecraft" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Meteo')">
+        <mat-icon svgIcon="Meteo" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Money')">
+        <mat-icon svgIcon="Money" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Time-zone')">
+        <mat-icon svgIcon="Heure" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+      <mat-list-item (click)="goToPage('/Lorem')">
+        <mat-icon svgIcon="Lorem" class="icons-color" mat-list-icon></mat-icon>
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-label style="display: flex; padding-left: 10px;">reload</mat-label>
+    <mat-select style="background-color: lightgray; width: 100%; text-align: center;" [(value)]="timing" [placeholder]="test">
+      <mat-option value="15000">15s</mat-option>
+      <mat-option value="30000">30s</mat-option>
+      <mat-option value="60000">60s</mat-option>
+    </mat-select>
+  </mat-drawer>
+
+  <mat-toolbar class="toolbar-service">
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h4 class="service-name">Spotify</h4>
+    <span class="example-spacer"></span>
+    <h5 style="color: red; margin-right: 4%; font-size: larger;" *ngIf="this.isVisible">{{textError}}</h5>
+    <h5 style="color: green; margin-right: 4%; font-size: larger;" *ngIf="this.state && this.connected">Connecté</h5>
+    <button mat-raised-button *ngIf="this.state && !this.connected" class="service-login-button" (click)="goToLink('http://localhost:8080/authorize/spotify')">se connecter</button>
+  </mat-toolbar>
+  <mat-tab-group mat-stretch-tabs animationDuration="2000ms">
+    <mat-tab label="Afficher ses playlist">
+      <div style="width: 100%; background-color: lightgray; position: fixed;">
+        <mat-form-field appearance="fill" style="margin-left: 10px; margin-right: 10px;">
+          <mat-label>Entrer un nom</mat-label>
+          <input matInput #searchPlaylist placeholder="Ex. Année 90">
+        </mat-form-field>
+      </div>
+      <div style="display: -webkit-box; margin-top: 80px;">
+        <ng-container *ngFor="let playlist of playlists">
+          <mat-card style="width: 24%;" *ngIf="showText(playlist.name, searchPlaylist.value)">
+            <mat-card-header>
+              <mat-card-title>{{playlist.name}}</mat-card-title>
+              <mat-card-subtitle>{{playlist.owner}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="playlist.image" height="auto" width="auto" alt="Playlist Icon">
+            <mat-card-content>
+              <p>{{playlist.description}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <p>Nombre de tracks: <strong>{{playlist.total}}</strong></p>
+              <button mat-raised-button (click)="unfollow(playlist.id, 0)">ne plus suivre</button>
+            </mat-card-actions>
+          </mat-card>
+        </ng-container>
+      </div>
+    </mat-tab>
+    <mat-tab label="Rechercher une playlist">
+      <div style="width: 100%; background-color: lightgray; position: fixed;">
+        <mat-form-field appearance="fill" style="margin-left: 10px; margin-right: 10px;">
+          <mat-label>Entrer un nom</mat-label>
+          <input matInput #requestPlaylist placeholder="Ex. Année 90">
+        </mat-form-field>
+        <button mat-raised-button class="service-login-button" style="align-self: center;" (click)="listSearch(requestPlaylist.value)">rechercher</button>
+      </div>
+      <div style="display: -webkit-box; margin-top: 80px;">
+        <ng-container *ngFor="let playlist of searchplaylists">
+          <mat-card style="width: 24%;">
+            <mat-card-header>
+              <mat-card-title>{{playlist.name}}</mat-card-title>
+              <mat-card-subtitle>{{playlist.owner}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="playlist.image" height="auto" width="auto" alt="Playlist Icon">
+            <mat-card-content>
+              <p>{{playlist.description}}</p>
+            </mat-card-content>
+            <mat-card-actions style="display: flex; justify-content: space-around">
+              <p>Nombre de tracks: <strong>{{playlist.total}}</strong></p>
+              <button mat-raised-button *ngIf="!playlist.follow" (click)="follow(playlist.id, 1)">s'abonner</button>
+              <button mat-raised-button *ngIf="playlist.follow" (click)="unfollow(playlist.id, 1)">se désabonner</button>
+            </mat-card-actions>
+          </mat-card>
+        </ng-container>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</mat-drawer-container>

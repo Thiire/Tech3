@@ -1,0 +1,142 @@
+{
+    "client": {
+      "host": "0.0.0.0"
+    },
+    "server": {
+      "current_time": 0,
+      "services": [
+        {
+          "name": "twitch",
+          "isOauth": true,
+          "widgets": [
+            {
+              "name": "Follow / Unfollow",
+              "description": "Follow and unfollow a channel : C",
+              "params": [
+                {
+                  "user_id": "id",
+                  "channelid": "name"
+                },
+                {
+                  "user_id": "string",
+                  "channelid": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "spotify",
+          "isOauth": true,
+          "widgets": [
+            {
+              "name": "Follow / Unfollow playlist",
+              "description": "Follow and unfollow a playlist : P",
+              "params": [
+                {
+                  "user_id": "id",
+                  "playlistid": "name"
+                },
+                {
+                  "user_id": "string",
+                  "playlistid": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "weather",
+          "isOauth": false,
+          "widgets": [
+            {
+              "name": "Give weather",
+              "description": "Give weather on a city : C",
+              "params": [
+                {
+                  "city": "city"
+                },
+                {
+                  "city": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "currency",
+          "isOauth": false,
+          "widgets": [
+            {
+              "name": "Give data of currencies at a time",
+              "description": "Give data of currency : C at time T",
+              "params": [
+                {
+                  "currency": "city",
+                  "date": "date"
+                },
+                {
+                  "currency": "string",
+                  "date": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "time_zone",
+          "isOauth": false,
+          "widgets": [
+            {
+              "name": "Time_zone",
+              "description": "Give time in an area : A",
+              "params": [
+                {
+                  "area": "area",
+                  "city": "city"
+                },
+                {
+                  "area": "string",
+                  "city": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "loripsum",
+          "isOauth": false,
+          "widgets": [
+            {
+              "name": "Lorem ipsum",
+              "description": "Give lorem ipsum : L",
+              "params": [
+                {
+                },
+                {
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Minecraft",
+          "isOauth": false,
+          "widgets": [
+            {
+              "name": "Minecraft Skins",
+              "description": "Give skin of a user : U",
+              "params": [
+                {
+                  "user": "user"
+                },
+                {
+                  "user": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

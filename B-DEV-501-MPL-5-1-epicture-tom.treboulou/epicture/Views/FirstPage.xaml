@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Cell="clr-namespace:epicture.Cell"
+             x:Class="epicture.Views.FirstPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="#2196F3">
+                <SearchBar Placeholder="Rechercher" BackgroundColor="white" TextColor="black" PlaceholderColor="black" SearchButtonPressed="SearchImage" x:Name="searchLine" HorizontalOptions="StartAndExpand" WidthRequest="250"/>
+                <Picker x:Name="sortPicker" Title="  Sort  " HorizontalOptions="CenterAndExpand"/>
+                <Picker x:Name="timePicker" Title="  Time  " HorizontalOptions="EndAndExpand" Margin="0, 0, 10, 0"/>
+            </StackLayout>
+            <ListView x:Name="listview" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Cell:ImgurCell Link="{Binding link}" Title="{Binding title}" Acces="{Binding acces}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

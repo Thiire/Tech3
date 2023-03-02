@@ -1,0 +1,5 @@
+Flask
+Flask-API
+pyrebase
+flask-cors
+bnet

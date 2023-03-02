@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:Cell="clr-namespace:epicture.Cell"
+             x:Class="epicture.Views.ProfilPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="#2196F3">
+                <Button x:Name="switchButton" Text="Photos" BackgroundColor="LightGreen" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="40, 0, 0, 0" Clicked="switchButton_Clicked"/>
+                <Button x:Name="uploadButton" Text="Upload" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Margin="0, 0, 40, 0"/>
+            </StackLayout>
+            <ListView x:Name="listview" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Cell:ImgurCell Link="{Binding link}" Title="{Binding title}" Acces="{Binding acces}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

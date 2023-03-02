@@ -1,0 +1,2252 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>dashboard documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">dashboard documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TwitchComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/twitch/twitch.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-twitch</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./twitch.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./twitch.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#channels">channels</a>
+                            </li>
+                            <li>
+                                <a href="#checked">checked</a>
+                            </li>
+                            <li>
+                                <a href="#connected">connected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog">dialog</a>
+                            </li>
+                            <li>
+                                <a href="#isExpanded">isExpanded</a>
+                            </li>
+                            <li>
+                                <a href="#isVisible">isVisible</a>
+                            </li>
+                            <li>
+                                <a href="#key">key</a>
+                            </li>
+                            <li>
+                                <a href="#post">post</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#ROOT_URL">ROOT_URL</a>
+                            </li>
+                            <li>
+                                <a href="#state">state</a>
+                            </li>
+                            <li>
+                                <a href="#test">test</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#textError">textError</a>
+                            </li>
+                            <li>
+                                <a href="#timer">timer</a>
+                            </li>
+                            <li>
+                                <a href="#timing">timing</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                            <li>
+                                <a href="#username">username</a>
+                            </li>
+                            <li>
+                                <a href="#users">users</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#follow">follow</a>
+                            </li>
+                            <li>
+                                <a href="#getUserChannel">getUserChannel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserlistUpdate">getUserlistUpdate</a>
+                            </li>
+                            <li>
+                                <a href="#goToLink">goToLink</a>
+                            </li>
+                            <li>
+                                <a href="#goToPage">goToPage</a>
+                            </li>
+                            <li>
+                                <a href="#listSearch">listSearch</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#showAlert">showAlert</a>
+                            </li>
+                            <li>
+                                <a href="#showText">showText</a>
+                            </li>
+                            <li>
+                                <a href="#startTimer">startTimer</a>
+                            </li>
+                            <li>
+                                <a href="#toggle">toggle</a>
+                            </li>
+                            <li>
+                                <a href="#unfollow">unfollow</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(matIconRegistry: MatIconRegistry, domSanitizer: <a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank">DomSanitizer</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, dialog: MatDialog, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/twitch/twitch.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>matIconRegistry</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatIconRegistry</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>domSanitizer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank" >DomSanitizer</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="follow"></a>
+                    <span class="name">
+                        <b>
+                            follow
+                        </b>
+                        <a href="#follow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>follow(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserChannel"></a>
+                    <span class="name">
+                        <b>
+                            getUserChannel
+                        </b>
+                        <a href="#getUserChannel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUserChannel(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, loading: user[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>loading</td>
+                                    <td>
+                                            <code>user[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserlistUpdate"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            getUserlistUpdate
+                        </b>
+                        <a href="#getUserlistUpdate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserlistUpdate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToLink"></a>
+                    <span class="name">
+                        <b>
+                            goToLink
+                        </b>
+                        <a href="#goToLink"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToLink(url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="198"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:198</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToPage"></a>
+                    <span class="name">
+                        <b>
+                            goToPage
+                        </b>
+                        <a href="#goToPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToPage(PageName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PageName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listSearch"></a>
+                    <span class="name">
+                        <b>
+                            listSearch
+                        </b>
+                        <a href="#listSearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listSearch(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showAlert"></a>
+                    <span class="name">
+                        <b>
+                            showAlert
+                        </b>
+                        <a href="#showAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showAlert(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, duration: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="181"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:181</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>text</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>duration</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showText"></a>
+                    <span class="name">
+                        <b>
+                            showText
+                        </b>
+                        <a href="#showText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showText(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, prefix: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>prefix</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startTimer"></a>
+                    <span class="name">
+                        <b>
+                            startTimer
+                        </b>
+                        <a href="#startTimer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startTimer()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggle"></a>
+                    <span class="name">
+                        <b>
+                            toggle
+                        </b>
+                        <a href="#toggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggle(state: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>state</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unfollow"></a>
+                    <span class="name">
+                        <b>
+                            unfollow
+                        </b>
+                        <a href="#unfollow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unfollow(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/app/twitch/twitch.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="channels"></a>
+                        <span class="name">
+                            <b>
+                            channels</b>
+                            <a href="#channels"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>user[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/twitch/twitch.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checked"></a>
+                        <span class="name">
+                            <b>
+                            checked</b>
+                            <a href="#checked"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/twitch/twitch.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="connected"></a>
+                        <span class="name">
+                            <b>
+                            connected</b>
+                            <a href="#connected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/twitch/twitch.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialog</b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatDialog</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/twitch/twitch.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isExpanded"></a>
+                        <span class="name">
+                            <b>
+                            isExpanded</b>
+                            <a href="#isExpanded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/twitch/twitch.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isVisible"></a>
+                        <span class="name">
+                            <b>
+                            isVisible</b>
+                            <a href="#isVisible"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/twitch/twitch.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="key"></a>
+                        <span class="name">
+                            <b>
+                            key</b>
+                            <a href="#key"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/twitch/twitch.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="post"></a>
+                        <span class="name">
+                            <b>
+                            post</b>
+                            <a href="#post"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/twitch/twitch.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ROOT_URL"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Readonly</span>
+                            ROOT_URL</b>
+                            <a href="#ROOT_URL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;http://localhost:8080&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/twitch/twitch.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="state"></a>
+                        <span class="name">
+                            <b>
+                            state</b>
+                            <a href="#state"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/twitch/twitch.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="test"></a>
+                        <span class="name">
+                            <b>
+                            test</b>
+                            <a href="#test"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;60s&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/twitch/twitch.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="textError"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            textError</b>
+                            <a href="#textError"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/twitch/twitch.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timer"></a>
+                        <span class="name">
+                            <b>
+                            timer</b>
+                            <a href="#timer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/twitch/twitch.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timing"></a>
+                        <span class="name">
+                            <b>
+                            timing</b>
+                            <a href="#timing"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>60000</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/twitch/twitch.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;Dashboard&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/twitch/twitch.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="username"></a>
+                        <span class="name">
+                            <b>
+                            username</b>
+                            <a href="#username"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/twitch/twitch.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="users"></a>
+                        <span class="name">
+                            <b>
+                            users</b>
+                            <a href="#users"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>user[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/twitch/twitch.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy, Inject, Injectable } from &#x27;@angular/core&#x27;;
+import { MatIconRegistry } from &quot;@angular/material/icon&quot;;
+import { DomSanitizer } from &quot;@angular/platform-browser&quot;;
+import { Router, ActivatedRoute } from &quot;@angular/router&quot;;
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
+import { HttpClient, HttpParams } from &#x27;@angular/common/http&#x27;
+import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { filter } from &#x27;rxjs/operators&#x27;;
+import &#x27;rxjs/add/operator/catch&#x27;
+import &#x27;rxjs/add/observable/of&#x27;
+
+export interface user {
+  name: string;
+  title: string;
+  image: string;
+  id: string;
+  live: boolean;
+  language: string;
+}
+
+@Component({
+  selector: &#x27;app-twitch&#x27;,
+  templateUrl: &#x27;./twitch.component.html&#x27;,
+  styleUrls: [&#x27;./twitch.component.css&#x27;]
+})
+export class TwitchComponent implements OnInit, OnDestroy {
+  state: boolean &#x3D; false;
+  connected: boolean &#x3D; false;
+  key: string &#x3D; &quot;&quot;;
+  username: string &#x3D; &quot;&quot;;
+  isVisible: boolean &#x3D; false;
+  isExpanded: boolean &#x3D; true;
+  title: string &#x3D; &#x27;Dashboard&#x27;;
+  public textError: string &#x3D; &quot;&quot;;
+  checked: boolean &#x3D; false;
+  timer: any;
+  timing: number &#x3D; 60000;
+  test: string &#x3D; &quot;60s&quot;;
+  users: user[] &#x3D; [];
+  channels: user[] &#x3D; []
+
+  readonly ROOT_URL &#x3D; &#x27;http://localhost:8080&#x27;;
+  post: Observable&lt;any&gt;;
+
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, private router:Router, private route: ActivatedRoute, public dialog: MatDialog, private http: HttpClient){
+    this.matIconRegistry.addSvgIcon(
+      &quot;Twitch&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Twitch_Logo.svg&quot;)
+    );
+    this.matIconRegistry.addSvgIcon(
+      &quot;Spotify&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Spotify_Logo.svg&quot;)
+    );
+    this.matIconRegistry.addSvgIcon(
+      &quot;Battlenet&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Battlenet_Logo.svg&quot;)
+    );
+    this.matIconRegistry.addSvgIcon(
+      &quot;Money&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Money_Logo.svg&quot;)
+    );
+    this.matIconRegistry.addSvgIcon(
+      &quot;Meteo&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Meteo_Logo.svg&quot;)
+    );
+    this.matIconRegistry.addSvgIcon(
+      &quot;Youtube&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Youtube_Logo.svg&quot;)
+    );
+    this.matIconRegistry.addSvgIcon(
+      &quot;Home&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Home_Logo.svg&quot;)
+    );
+    this.matIconRegistry.addSvgIcon(
+      &quot;Heure&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Heure_Logo.svg&quot;)
+    );
+    this.matIconRegistry.addSvgIcon(
+      &quot;Lorem&quot;,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(&quot;../assets/Lorem_Logo.svg&quot;)
+    );
+  }
+
+  ngOnInit() {
+    this.key &#x3D; (history.state.key) ? history.state.key : &quot;&quot;;
+    this.username &#x3D; (history.state.username) ? history.state.username : &quot;&quot;;
+    if (this.key.length &#x3D;&#x3D; 0 || this.username.length &#x3D;&#x3D; 0) {
+      this.state &#x3D; false;
+      this.showAlert(&quot;Veuillez vous connectez sur la page d&#x27;accueil en premier&quot;, 240000);
+    } else {
+      this.state &#x3D; true;
+      this.http.get(this.ROOT_URL + &quot;/connected/twitch?key&#x3D;&quot; + this.key).subscribe(result &#x3D;&gt; {
+        if (result &#x3D;&#x3D; 200) {
+          this.getUserlistUpdate();
+          this.startTimer();
+          this.connected &#x3D; true;
+        }
+      })
+    }
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.timer);
+  }
+
+  toggle(state: boolean) {
+    this.checked &#x3D; state;
+  }
+
+  getUserChannel(name: string, loading: user[]) {
+    this.http.get(this.ROOT_URL + &quot;/information/twitch/channel?key&#x3D;&quot; + this.key + &quot;&amp;id&#x3D;&quot; + name).subscribe(result &#x3D;&gt; {
+      var tmp &#x3D; Object.values(result);
+      var obj: user &#x3D; {
+        name: tmp[0][0].display_name,
+        title: tmp[0][0].description,
+        image: tmp[0][0].profile_image_url,
+        id: tmp[0][0].id,
+        live: false,
+        language: tmp[0][0].broadcaster_type
+      };
+      loading.push(obj);
+    })
+  }
+
+  listSearch(name: string) {
+    if (!this.state) {
+      return this.showAlert(&quot;Veuillez vous connectez sur la page d&#x27;accueil en premier&quot;, 240000);
+    } else if (name.length &#x3D;&#x3D; 0) {
+      return this.showAlert(&quot;Veuillez rentrez un nom d&#x27;utilisateur&quot;, 4500);
+    }
+    this.http.get(this.ROOT_URL + &quot;/information/twitch/searchchannel?key&#x3D;&quot; + this.key + &quot;&amp;channel&#x3D;&quot; + name + &#x27;&amp;live&#x3D;&#x27; + this.checked).subscribe(result &#x3D;&gt; {
+      var tmp &#x3D; Object.values(result);
+      this.users &#x3D; [];
+      for (var i &#x3D; 0; i &lt; tmp[0].length; i++) {
+        var obj: user &#x3D; {
+          name: tmp[0][i].display_name,
+          title: tmp[0][i].title,
+          image: tmp[0][i].thumbnail_url,
+          id: tmp[0][i].id,
+          live: tmp[0][i].is_live,
+          language: tmp[0][i].broadcaster_language
+        };
+        this.users.push(obj);
+      }
+    })
+  }
+
+  async getUserlistUpdate() {
+    this.http.get(this.ROOT_URL + &quot;/information/twitch/getlist?key&#x3D;&quot; + this.key).subscribe(result &#x3D;&gt; {
+      var tmp &#x3D; Object.values(result);
+      var userstmp: user[] &#x3D; [] 
+      for (var i &#x3D; 0; i &lt; tmp[0].length; i++) {
+        this.getUserChannel(tmp[0][i].to_id, userstmp);
+      }
+      this.channels &#x3D; userstmp;
+    })
+  }
+
+  startTimer() {
+    this.timer &#x3D; setInterval(() &#x3D;&gt; {
+      this.getUserlistUpdate();
+    }, this.timing);
+  }
+
+  unfollow(id: string) {
+    this.http.get(this.ROOT_URL + &quot;/information/twitch/unfollow?key&#x3D;&quot; + this.key + &#x27;&amp;id&#x3D;&#x27; + id).subscribe(result &#x3D;&gt; {
+      if (result &#x3D;&#x3D; 200) {
+        this.getUserlistUpdate();
+      }
+    })
+  }
+
+  follow(id: string) {
+    this.http.get(this.ROOT_URL + &quot;/information/twitch/follow?key&#x3D;&quot; + this.key + &#x27;&amp;id&#x3D;&#x27; + id).subscribe(result &#x3D;&gt; {
+      if (result &#x3D;&#x3D; 200) {
+        this.getUserlistUpdate();
+      }
+    })
+  }
+
+  showAlert(text: string, duration: number) : void {
+    if (this.isVisible) { 
+      return;
+    }
+    this.textError &#x3D; text;
+    this.isVisible &#x3D; true;
+    setTimeout(()&#x3D;&gt; this.isVisible &#x3D; false,duration)
+  }
+
+  showText(name: string, prefix: string): boolean {
+    return name.toLowerCase().startsWith(prefix.toLowerCase());
+  }
+
+  goToPage(PageName:string):void{
+    this.router.navigateByUrl(PageName, { state: {key: this.key, username: this.username}});
+  }
+
+  goToLink(url: string) {
+    const tmp &#x3D; window.open(url, &quot;_blank&quot;);
+    var inter &#x3D; window.setInterval(() &#x3D;&gt; {
+      if (tmp?.location?.href &amp;&amp; tmp?.location?.href.match(&#x27;localhost:5000&#x27;) &amp;&amp; tmp?.location?.href.match(&#x27;code&#x27;)) {
+        var url &#x3D; new URL(tmp.location.href);
+        this.post &#x3D; this.http.post(this.ROOT_URL + &#x27;/oauth2callback/twitch&#x27;, {&quot;code&quot;: url.searchParams.get(&quot;code&quot;), &quot;key&quot;: this.key}).catch(err &#x3D;&gt; {
+          return Observable.of(err);
+        });
+        this.post.subscribe(result &#x3D;&gt; {
+          this.connected &#x3D; true;
+          this.getUserlistUpdate();
+          this.startTimer();
+          tmp?.close();
+          window.clearInterval(inter);
+        })
+      } else if (tmp?.closed) {
+        this.connected &#x3D; false;
+        this.showAlert(&quot;La connexion n&#x27;a pas aboutie&quot;, 4500);
+        tmp?.close();
+        window.clearInterval(inter);
+      }
+    }, 5000)
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-drawer-container fullscreen&gt;
+  &lt;mat-drawer #drawer style&#x3D;&quot;height: 100%; width: 70px;&quot; mode&#x3D;&quot;side&quot; #drawer opened&#x3D;&quot;true&quot;&gt;
+    &lt;mat-nav-list style&#x3D;&quot;height: 90%;&quot;&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Home&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Home&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Youtube&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Youtube&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Spotify&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Spotify&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Twitch&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Twitch&quot; class&#x3D;&quot;icons-color-selected&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Battlenet&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Battlenet&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Minecraft&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Minecraft&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Meteo&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Meteo&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Money&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Money&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Time-zone&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Heure&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+      &lt;mat-list-item (click)&#x3D;&quot;goToPage(&#x27;/Lorem&#x27;)&quot;&gt;
+        &lt;mat-icon svgIcon&#x3D;&quot;Lorem&quot; class&#x3D;&quot;icons-color&quot; mat-list-icon&gt;&lt;/mat-icon&gt;
+      &lt;/mat-list-item&gt;
+    &lt;/mat-nav-list&gt;
+    &lt;mat-label style&#x3D;&quot;display: flex; padding-left: 10px;&quot;&gt;reload&lt;/mat-label&gt;
+    &lt;mat-select style&#x3D;&quot;background-color: lightgray; width: 100%; text-align: center;&quot; [(value)]&#x3D;&quot;timing&quot; [placeholder]&#x3D;&quot;test&quot;&gt;
+      &lt;mat-option value&#x3D;&quot;15000&quot;&gt;15s&lt;/mat-option&gt;
+      &lt;mat-option value&#x3D;&quot;30000&quot;&gt;30s&lt;/mat-option&gt;
+      &lt;mat-option value&#x3D;&quot;60000&quot;&gt;60s&lt;/mat-option&gt;
+    &lt;/mat-select&gt;
+  &lt;/mat-drawer&gt;
+
+  &lt;mat-toolbar class&#x3D;&quot;toolbar-service&quot;&gt;
+    &lt;button mat-icon-button (click)&#x3D;&quot;drawer.toggle()&quot;&gt;
+      &lt;mat-icon&gt;menu&lt;/mat-icon&gt;
+    &lt;/button&gt;
+    &lt;h4 class&#x3D;&quot;service-name&quot;&gt;Twitch&lt;/h4&gt;
+    &lt;span class&#x3D;&quot;example-spacer&quot;&gt;&lt;/span&gt;
+    &lt;h5 style&#x3D;&quot;color: red; margin-right: 4%; font-size: larger;&quot; *ngIf&#x3D;&quot;this.isVisible&quot;&gt;{{textError}}&lt;/h5&gt;
+    &lt;h5 style&#x3D;&quot;color: green; margin-right: 4%; font-size: larger;&quot; *ngIf&#x3D;&quot;this.state &amp;&amp; this.connected&quot;&gt;Connecté&lt;/h5&gt;
+    &lt;button mat-raised-button *ngIf&#x3D;&quot;this.state &amp;&amp; !this.connected&quot; class&#x3D;&quot;service-login-button&quot; (click)&#x3D;&quot;goToLink(&#x27;http://localhost:8080/authorize/twitch&#x27;)&quot;&gt;se connecter&lt;/button&gt;
+  &lt;/mat-toolbar&gt;
+  &lt;mat-tab-group mat-stretch-tabs animationDuration&#x3D;&quot;2000ms&quot;&gt;
+    &lt;mat-tab label&#x3D;&quot;Afficher les chaines suivies&quot;&gt;
+      &lt;div style&#x3D;&quot;width: 100%; background-color: lightgray; position: fixed;&quot;&gt;
+        &lt;mat-form-field appearance&#x3D;&quot;fill&quot; style&#x3D;&quot;margin-left: 10px; margin-right: 10px;&quot;&gt;
+          &lt;mat-label&gt;Entrer un nom&lt;/mat-label&gt;
+          &lt;input matInput #searchName placeholder&#x3D;&quot;Ex. ZeratoR&quot;&gt;
+        &lt;/mat-form-field&gt;
+      &lt;/div&gt;
+      &lt;div style&#x3D;&quot;display: -webkit-box; margin-top: 80px;&quot;&gt;
+        &lt;ng-container *ngFor&#x3D;&quot;let user of channels&quot;&gt;
+          &lt;mat-card style&#x3D;&quot;width: 24%;&quot; *ngIf&#x3D;&quot;showText(user.name, searchName.value)&quot;&gt;
+            &lt;mat-card-header&gt;
+              &lt;mat-card-title&gt;{{user.name}}&lt;/mat-card-title&gt;
+              &lt;mat-card-subtitle&gt;{{(user.language.length &#x3D;&#x3D; 0 ? &quot;streamer&quot; : user.language)}}&lt;/mat-card-subtitle&gt;
+            &lt;/mat-card-header&gt;
+            &lt;img mat-card-image [src]&#x3D;&quot;user.image&quot; height&#x3D;&quot;auto&quot; width&#x3D;&quot;auto&quot; alt&#x3D;&quot;user Icon&quot;&gt;
+            &lt;mat-card-content&gt;
+              &lt;p&gt;{{user.title}}&lt;/p&gt;
+            &lt;/mat-card-content&gt;
+            &lt;mat-card-actions style&#x3D;&quot;display: flex; justify-content: space-around&quot;&gt;
+              &lt;button mat-raised-button (click)&#x3D;&quot;unfollow(user.id)&quot;&gt;ne plus suivre&lt;/button&gt;
+            &lt;/mat-card-actions&gt;
+          &lt;/mat-card&gt;
+        &lt;/ng-container&gt;
+      &lt;/div&gt;
+    &lt;/mat-tab&gt;
+    &lt;mat-tab label&#x3D;&quot;Rechercher un utilisateur&quot;&gt;
+      &lt;div style&#x3D;&quot;width: 100%; background-color: lightgray; position: fixed;&quot;&gt;
+        &lt;mat-form-field appearance&#x3D;&quot;fill&quot; style&#x3D;&quot;margin-left: 10px; margin-right: 10px;&quot;&gt;
+          &lt;mat-label&gt;Entrer un nom&lt;/mat-label&gt;
+          &lt;input matInput #searchUsers placeholder&#x3D;&quot;Ex. Année 90&quot;&gt;
+        &lt;/mat-form-field&gt;
+        &lt;mat-checkbox style&#x3D;&quot;align-self: center; font-size: large; font-weight: 500; margin-right: 10px;&quot; #c (click)&#x3D;&quot;toggle(!c.checked)&quot;&gt;En live&lt;/mat-checkbox&gt;
+        &lt;button mat-raised-button class&#x3D;&quot;service-login-button&quot; style&#x3D;&quot;align-self: center;&quot; (click)&#x3D;&quot;listSearch(searchUsers.value)&quot;&gt;rechercher&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div style&#x3D;&quot;display: -webkit-box; margin-top: 80px;&quot;&gt;
+        &lt;ng-container *ngFor&#x3D;&quot;let user of users&quot;&gt;
+          &lt;mat-card style&#x3D;&quot;width: 24%;&quot;&gt;
+            &lt;mat-card-header&gt;
+              &lt;mat-card-title&gt;{{user.name}}&lt;/mat-card-title&gt;
+              &lt;mat-card-subtitle&gt;{{user.language}}&lt;/mat-card-subtitle&gt;
+            &lt;/mat-card-header&gt;
+            &lt;img mat-card-image [src]&#x3D;&quot;user.image&quot; height&#x3D;&quot;auto&quot; width&#x3D;&quot;auto&quot; alt&#x3D;&quot;user Icon&quot;&gt;
+            &lt;mat-card-content&gt;
+              &lt;p&gt;{{user.title}}&lt;/p&gt;
+            &lt;/mat-card-content&gt;
+            &lt;mat-card-actions style&#x3D;&quot;display: flex; justify-content: space-around&quot;&gt;
+              &lt;p&gt;&lt;strong&gt;{{(user.live ? &quot;En Live&quot; : &quot;Hors Ligne&quot;)}}&lt;/strong&gt;&lt;/p&gt;
+              &lt;button mat-raised-button (click)&#x3D;&quot;follow(user.id)&quot;&gt;suivre&lt;/button&gt;
+            &lt;/mat-card-actions&gt;
+          &lt;/mat-card&gt;
+        &lt;/ng-container&gt;
+      &lt;/div&gt;
+    &lt;/mat-tab&gt;
+  &lt;/mat-tab-group&gt;
+&lt;/mat-drawer-container&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./twitch.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.example-sidenav-content {
+  display: flex;
+  height: 100%;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep .mat-toolbar{
+  z-index: 10000;
+  position: fixed
+}
+
+::ng-deep .mat-tab-group{
+  margin-top:5% !important;
+}
+
+::ng-deep .mat-tab-header{
+  z-index: 10000;
+  width:100vw;
+  position: fixed  !important;
+  background-color: white !important;
+}
+
+::ng-deep .mat-tab-body-wrapper{
+  position: relative !important;
+  margin-top:45px;
+}
+
+.toolbar-service {
+  flex: 1;
+  height: 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-name {
+  margin-left: 1%;
+  font-size: xx-large;
+}
+
+.service-login-button {
+  margin-right: 4%;
+  font-size: large;
+}
+
+.mat-tab-main {
+  background-color: white;
+  color:black;
+}
+
+.forms-main {
+  display: flex;
+  height: 100%;
+  padding: 10px;
+  background-color: #F0F0F0;
+}
+
+.test {
+  background-color: yellow;
+}
+
+.icons-color {
+  color: black;
+}
+
+.icons-color svg {
+  fill: black;
+}
+
+.icons-color-selected {
+  color: darkviolet;
+}
+
+.icons-color-selected svg {
+  fill: darkviolet;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-drawer-container fullscreen>  <mat-drawer #drawer style="height: 100%; width: 70px;" mode="side" #drawer opened="true">    <mat-nav-list style="height: 90%;">      <mat-list-item (click)="goToPage(\'/Home\')">        <mat-icon svgIcon="Home" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Youtube\')">        <mat-icon svgIcon="Youtube" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Spotify\')">        <mat-icon svgIcon="Spotify" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Twitch\')">        <mat-icon svgIcon="Twitch" class="icons-color-selected" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Battlenet\')">        <mat-icon svgIcon="Battlenet" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Minecraft\')">        <mat-icon svgIcon="Minecraft" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Meteo\')">        <mat-icon svgIcon="Meteo" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Money\')">        <mat-icon svgIcon="Money" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Time-zone\')">        <mat-icon svgIcon="Heure" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>      <mat-list-item (click)="goToPage(\'/Lorem\')">        <mat-icon svgIcon="Lorem" class="icons-color" mat-list-icon></mat-icon>      </mat-list-item>    </mat-nav-list>    <mat-label style="display: flex; padding-left: 10px;">reload</mat-label>    <mat-select style="background-color: lightgray; width: 100%; text-align: center;" [(value)]="timing" [placeholder]="test">      <mat-option value="15000">15s</mat-option>      <mat-option value="30000">30s</mat-option>      <mat-option value="60000">60s</mat-option>    </mat-select>  </mat-drawer>  <mat-toolbar class="toolbar-service">    <button mat-icon-button (click)="drawer.toggle()">      <mat-icon>menu</mat-icon>    </button>    <h4 class="service-name">Twitch</h4>    <span class="example-spacer"></span>    <h5 style="color: red; margin-right: 4%; font-size: larger;" *ngIf="this.isVisible">{{textError}}</h5>    <h5 style="color: green; margin-right: 4%; font-size: larger;" *ngIf="this.state && this.connected">Connecté</h5>    <button mat-raised-button *ngIf="this.state && !this.connected" class="service-login-button" (click)="goToLink(\'http://localhost:8080/authorize/twitch\')">se connecter</button>  </mat-toolbar>  <mat-tab-group mat-stretch-tabs animationDuration="2000ms">    <mat-tab label="Afficher les chaines suivies">      <div style="width: 100%; background-color: lightgray; position: fixed;">        <mat-form-field appearance="fill" style="margin-left: 10px; margin-right: 10px;">          <mat-label>Entrer un nom</mat-label>          <input matInput #searchName placeholder="Ex. ZeratoR">        </mat-form-field>      </div>      <div style="display: -webkit-box; margin-top: 80px;">        <ng-container *ngFor="let user of channels">          <mat-card style="width: 24%;" *ngIf="showText(user.name, searchName.value)">            <mat-card-header>              <mat-card-title>{{user.name}}</mat-card-title>              <mat-card-subtitle>{{(user.language.length == 0 ? "streamer" : user.language)}}</mat-card-subtitle>            </mat-card-header>            <img mat-card-image [src]="user.image" height="auto" width="auto" alt="user Icon">            <mat-card-content>              <p>{{user.title}}</p>            </mat-card-content>            <mat-card-actions style="display: flex; justify-content: space-around">              <button mat-raised-button (click)="unfollow(user.id)">ne plus suivre</button>            </mat-card-actions>          </mat-card>        </ng-container>      </div>    </mat-tab>    <mat-tab label="Rechercher un utilisateur">      <div style="width: 100%; background-color: lightgray; position: fixed;">        <mat-form-field appearance="fill" style="margin-left: 10px; margin-right: 10px;">          <mat-label>Entrer un nom</mat-label>          <input matInput #searchUsers placeholder="Ex. Année 90">        </mat-form-field>        <mat-checkbox style="align-self: center; font-size: large; font-weight: 500; margin-right: 10px;" #c (click)="toggle(!c.checked)">En live</mat-checkbox>        <button mat-raised-button class="service-login-button" style="align-self: center;" (click)="listSearch(searchUsers.value)">rechercher</button>      </div>      <div style="display: -webkit-box; margin-top: 80px;">        <ng-container *ngFor="let user of users">          <mat-card style="width: 24%;">            <mat-card-header>              <mat-card-title>{{user.name}}</mat-card-title>              <mat-card-subtitle>{{user.language}}</mat-card-subtitle>            </mat-card-header>            <img mat-card-image [src]="user.image" height="auto" width="auto" alt="user Icon">            <mat-card-content>              <p>{{user.title}}</p>            </mat-card-content>            <mat-card-actions style="display: flex; justify-content: space-around">              <p><strong>{{(user.live ? "En Live" : "Hors Ligne")}}</strong></p>              <button mat-raised-button (click)="follow(user.id)">suivre</button>            </mat-card-actions>          </mat-card>        </ng-container>      </div>    </mat-tab>  </mat-tab-group></mat-drawer-container></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthorizationComponent', 'selector': 'app-authorization'},{'name': 'BattlenetComponent', 'selector': 'app-battlenet'},{'name': 'DialogConnection', 'selector': 'dialog-connection'},{'name': 'DialogSignin', 'selector': 'dialog-signin'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoremComponent', 'selector': 'app-lorem'},{'name': 'MeteoComponent', 'selector': 'app-meteo'},{'name': 'MinecraftComponent', 'selector': 'app-minecraft'},{'name': 'MoneyComponent', 'selector': 'app-money'},{'name': 'SpotifyComponent', 'selector': 'app-spotify'},{'name': 'TimeZoneComponent', 'selector': 'app-timezone'},{'name': 'TwitchComponent', 'selector': 'app-twitch'},{'name': 'YoutubeComponent', 'selector': 'app-youtube'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'TwitchComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TwitchComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

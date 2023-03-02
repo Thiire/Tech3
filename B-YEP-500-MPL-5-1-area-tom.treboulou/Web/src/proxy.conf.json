@@ -1,0 +1,8 @@
+{
+    "/spotifyRedirect": {
+        "target": "https://area-babyb.herokuapp.com",
+        "secure": false,
+        "logLevel": "debug",
+        "changOrigin": true
+    }
+}
